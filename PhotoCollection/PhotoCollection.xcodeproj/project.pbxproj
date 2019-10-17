@@ -13,6 +13,7 @@
 		85AE98262358EC0C0021208C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85AE98242358EC0C0021208C /* Main.storyboard */; };
 		85AE98282358EC100021208C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85AE98272358EC100021208C /* Assets.xcassets */; };
 		85AE982B2358EC100021208C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85AE98292358EC100021208C /* LaunchScreen.storyboard */; };
+		85AE98332358EC9B0021208C /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AE98322358EC9B0021208C /* PhotoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		85AE98272358EC100021208C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85AE982A2358EC100021208C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85AE982C2358EC100021208C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85AE98322358EC9B0021208C /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +65,17 @@
 				85AE98272358EC100021208C /* Assets.xcassets */,
 				85AE98292358EC100021208C /* LaunchScreen.storyboard */,
 				85AE982C2358EC100021208C /* Info.plist */,
+				85AE98342358ECA30021208C /* Models */,
 			);
 			path = PhotoCollection;
+			sourceTree = "<group>";
+		};
+		85AE98342358ECA30021208C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				85AE98322358EC9B0021208C /* PhotoModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			files = (
 				85AE98232358EC0C0021208C /* ViewController.swift in Sources */,
 				85AE981F2358EC0C0021208C /* AppDelegate.swift in Sources */,
+				85AE98332358EC9B0021208C /* PhotoModel.swift in Sources */,
 				85AE98212358EC0C0021208C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
