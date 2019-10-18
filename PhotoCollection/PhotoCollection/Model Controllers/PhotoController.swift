@@ -11,21 +11,21 @@ import Foundation
 class PhotoController {
     var photos: [Photo] = []
     
-    private func createPhoto(withData imageData: Data , withTitle title: String) -> Photo {
+   func createPhoto(image: Data, title: String) -> Photo {
         
-        let photo = Photo(imageData: imageData, title: title)
+        let photo = Photo(imageData: image, title: title)
         photos.append(photo)
 //        saveToPersistentStore()
         return photo
     }
     
-    private func updatePhoto(photo: Photo, withData imageData: Data, withTitle title: String ) {
+    func updatePhoto(photo: Photo, image: Data, title: String ) {
         guard let index = photos.firstIndex(of: photo) else { return }
         
         var updatedPhoto = photo
         
         updatedPhoto.title = title
-        updatedPhoto.imageData = imageData
+        updatedPhoto.imageData = image
         
         photos.remove(at: index)
         photos.append(updatedPhoto)
