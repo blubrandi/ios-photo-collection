@@ -22,12 +22,20 @@ class PhotosCollectionViewController: UICollectionViewController {
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
+        
+        setTheme()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        collectionView.reloadData()
+        setTheme()
     }
     
     func setTheme() {
         guard let themePreference = themeHelper.themePreference else { return }
         
-        themePreference == "Blue" ? (collectionView.backgroundColor = .blue) : (collectionView.backgroundColor = .darkGray)
+        themePreference == "Blue" ? (collectionView.backgroundColor = #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1)) : (collectionView.backgroundColor = #colorLiteral(red: 0.1427832544, green: 0.1427832544, blue: 0.1427832544, alpha: 1))
     }
 
     // MARK: - Navigation
@@ -55,6 +63,7 @@ class PhotosCollectionViewController: UICollectionViewController {
             guard let destinationVC = segue.destination as? ThemeSelectionViewController else { return }
             
             destinationVC.themeHelper = themeHelper
+            destinationVC.modalPresentationStyle = .fullScreen
         }
     }
 

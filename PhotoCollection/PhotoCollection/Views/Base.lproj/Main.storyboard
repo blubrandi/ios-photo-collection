@@ -200,7 +200,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qn6-g7-mQG" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8ND-ZE-8he">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="8ND-ZE-8he">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -215,6 +216,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Ugd-zZ-NvD"/>
+        <segue reference="XwS-fo-AET"/>
     </inferredMetricsTieBreakers>
 </document>
