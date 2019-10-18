@@ -26,11 +26,9 @@ class ThemeHelper {
         return UserDefaults.standard.string(forKey: themePreferenceKey)
     }
     
-    init() {
+    init(themePreference: String?) {
         
-        if themePreference == nil {
-            setThemePreferenceToDark()
-        }
+        guard themePreference == nil else { return }
     }
 }
 
