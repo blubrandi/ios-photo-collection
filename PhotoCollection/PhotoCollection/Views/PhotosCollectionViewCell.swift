@@ -13,7 +13,11 @@ class PhotosCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var cellPhoto: UIImageView!
     @IBOutlet weak var photoLabel: UILabel!
     
-    var photo: Photo?
+    var photo: Photo? {
+        didSet {
+            updateViews()
+        }
+    }
     
     private func updateViews() {
         guard let photo = photo else { return }
