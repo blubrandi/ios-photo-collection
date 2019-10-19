@@ -56,7 +56,6 @@
                                 <connections>
                                     <outlet property="cellPhoto" destination="6rd-jt-3IG" id="1hu-IR-sfZ"/>
                                     <outlet property="photoLabel" destination="8hW-hh-DVb" id="3iZ-X3-L0O"/>
-                                    <segue destination="9U9-Gd-jud" kind="show" identifier="showPhotoDetailSegue" id="Ugd-zZ-NvD"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -71,9 +70,9 @@
                                 <segue destination="JBP-0C-Mb2" kind="presentation" identifier="selectThemeSegue" id="T5h-No-B8v"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="lI4-0P-URK">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="KxW-rf-sTk" customClass="AddPhotoButton" customModule="PhotoCollection" customModuleProvider="target">
                             <connections>
-                                <segue destination="9U9-Gd-jud" kind="show" identifier="addPhotoSegue" id="XwS-fo-AET"/>
+                                <segue destination="9U9-Gd-jud" kind="show" identifier="addPhotoSegue" id="r7G-fz-X43"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -215,7 +214,4 @@
             <point key="canvasLocation" x="479.71014492753625" y="115.84821428571428"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="XwS-fo-AET"/>
-    </inferredMetricsTieBreakers>
 </document>
